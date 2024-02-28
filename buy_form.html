@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="valentine">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="shortcut icon" href="images/WhatsApp Image 2024-02-25 at 10.33.05 PM.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+    <nav class=" m-5">
+        <div class="navbar bg-secondary text-black rounded-xl">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a href="#arts">Arts</a></li>
+                        <li><a>Reviews</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">Art Gallary</a>
+            </div>
+            <div class="navbar-end hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Arts</a></li>
+                    <li><a href="index.html">Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- form section -->
+    <section
+        class="min-h-screen mx-16 md:mx-44 lg:mx-80 rounded-xl p-7 md:p-16 lg:p-32 bg-green-200 flex justify-center gap-5">
+        <form action="" class="flex flex-col gap-5">
+
+            <h1 class="text-2xl font-bold">Name:</h1>
+            <input type="text" class="text-2xl p-5 rounded-xl bg-green-100" name="name" id="name" required>
+            <h1 class="text-2xl font-bold">Phone:</h1>
+            <input type="number" class="text-2xl p-5 rounded-xl bg-green-100" name="phone" id="phone" required>
+            <h1 class="text-2xl font-bold">Email:</h1>
+            <input type="email" class="text-2xl p-5 rounded-xl bg-green-100" name="email" id="email" required>
+            <h1 class="text-2xl font-bold">Address:</h1>
+            <input type="text" class="text-2xl p-5 rounded-xl bg-green-100" name="address" id="address" required>
+            <h1 class="text-2xl font-bold">Payment Method:</h1>
+            <select name="paymentMethod" id="paymentMethod" class="text-2xl p-5 rounded-xl bg-green-100 w-full" required> 
+                <option value="cod">Cash on Delivery</option>
+                <option value="bkash">Bkash</option>
+                <option value="nagad">Nagad</option>
+                <option value="rocket">Rocket</option>
+            </select>
+            <input type="submit" class="w-full bg-green-100 text-xl p-5 hover:cursor-pointer rounded-xl font-bold">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-4 bg-black text-base-content mt-10 text-white">
+
+        <p>@Art Gallary Management System</p>
+        <p>Ratris Project</p>
+
+    </footer>
+
+</body>
+
+</html>
